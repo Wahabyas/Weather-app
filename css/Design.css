@@ -10,10 +10,40 @@ body{
 .card{
     width: 90%;
     max-width: 400px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: linear-gradient(to right, #00feba, #5b548a);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search input{
+    width: 80%;
+    padding: 10px;
+    outline: 2px;
+    border: none;
+    height: 60px;
+    border-radius: 5px;
+    outline: none;
+    color: #555;
+    background-color: #ebfffc;
+    font-size: 25px;
+}
+.search button{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+}
+.weather h1{
+    font-size: 150px;
+    margin-bottom: 10px;
 }
