@@ -9,13 +9,34 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="Search Place" spellcheck="false">
-            <button>🔍</button>
+            <form action="" id="forms">
+                 <input type="text" name="inputs" placeholder="Search Place..." spellcheck="false">
+            <button type="submit" id="search">🔍</button>
+            </form>
         </div>
         <div class="weather">
             <h1>⛅</h1>
             <h2 class="temp">21°C</h2>
             <h2 class="city">Marawi city</h2>
+            <div class="content">
+                <h2></h2>
+            </div>
     </div>
 </body>
+<script>
+
+   document.forms["forms"].addEventListener("submit", (event) => {
+            event.preventDefault(); // prevents page reload
+            let input = document.getElementById("inputs").value;
+
+            // create a new <h2> element
+            let newHeading = document.createElement("h2");
+            newHeading.innerText = input;
+
+            // append to .content
+            document.querySelector(".content").appendChild(newHeading);
+
+            // clear the input
+});
+</script>
 </html>
