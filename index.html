@@ -26,17 +26,18 @@
 <script>
 
    document.forms["forms"].addEventListener("submit", (event) => {
-            event.preventDefault(); // prevents page reload
+            event.preventDefault(); 
             let input = document.getElementById("inputs").value;
 
-            // create a new <h2> element
+           
             let newHeading = document.createElement("h2");
             newHeading.innerText = input;
 
-            // append to .content
+            alert(input);
+          
             document.querySelector(".content").appendChild(newHeading);
 
-            // clear the input
+      
 });
 </script>
 </html>
